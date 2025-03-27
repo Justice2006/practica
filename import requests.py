@@ -1,7 +1,7 @@
 import requests
 
 # Configuración inicial
-jenkins_url = "http://localhost:8080/job/NombreDe1Job/build"
+jenkins_url = "http://localhost:8080/job/practica/"
 username = "Lucio"
 api_token = "119e02c42ad4d41a1e7cba624d5bd86b01"
 
