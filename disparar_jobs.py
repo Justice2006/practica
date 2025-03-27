@@ -1,7 +1,7 @@
 import requests
 
 # Configuración inicial
-jenkins_url = "http://localhost:8080/job/practica/"
+jenkins_url = "http://localhost:8080/job/practica/build"
 username = "Lucio"
 api_token = "119e02c42ad4d41a1e7cba624d5bd86b01"
 
@@ -11,6 +11,6 @@ try:
     if response.status_code == 201:
         print("Job disparado exitosamente.")
     else:
-        print(f"Error al disparar el job. Código de estado: {response.status_code}")
+        print(f"Error al disparar el job. Código de estado: {response.status_code} - {response.text}")
 except Exception as e:
     print(f"Ocurrió un error: {e}")
